@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Mitr', Arial, sans-serif;
+  background-color: #f0f5ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dashboard-title {
+  font-size: 1.8em;
+  color: #003366;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chart-card, .color-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+  margin-bottom: 20px;
+  border: none;
+}
+
+.color-box {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.color-details {
+  background-color: #f0f5ff;
+  padding: 15px;
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dropdown-toggle, .btn-primary {
+  border-radius: 25px;
+  font-family: 'Mitr', sans-serif;
+  font-weight: 400;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  border-color: #0066cc;
+}
+
+.btn-primary:hover {
+  background-color: #003366;
+  border-color: #003366;
+}
+
+.dropdown-toggle {
+  background-color: #ffffff;
+  color: #0066cc;
+  border-color: #0066cc;
+}
+
+.dropdown-toggle:hover {
+  background-color: #f0f5ff;
+  color: #003366;
+  border-color: #003366;
+}
+
+.dropdown-item {
+  font-family: 'Mitr', sans-serif;
+}
+
+.card-body {
+  padding: 25px;
 }
